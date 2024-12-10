@@ -1,0 +1,512 @@
+@charset "UTF-8";
+
+/* Para celulares */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  section.slider {
+    height: 400px;
+    background-size: contain;
+  }
+
+  .slide-box img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  /* Estilo e posicionamento do texto nas imagens */
+  .slide-box #paragraph1 {
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 60%;
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+
+  .slide-box #paragraph2 {
+    font-size: 2rem;
+    align-items: center;
+    margin-top: 16%;
+  }
+
+  /* Estilo para os botões do carrossel */
+  .discover-more {
+    position: absolute;
+    background-color: #18afd3;
+    padding: 10px;
+    border-radius: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
+  }
+
+  .discover-more:hover {
+    background-color: #1491b0;
+  }
+
+  /* Posicionamento dos botões de cada slide do carrossel */
+  #btn-discover-more1 {
+    left: 0;
+    margin-top: 41%;
+    margin-left: 2.5rem;
+  }
+
+  #btn-discover-more2 {
+    margin-top: 30%;
+  }
+
+  .nav-manual,
+  .nav-auto {
+    position: absolute;
+    width: 100%;
+    top: 1;
+    margin-top: 48%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  #present-newsletter {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+  }
+}
+
+/* Para tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  section.slider {
+    height: 500px;
+  }
+
+  /* Estilo e posicionamento do texto nas imagens */
+  .slide-box #paragraph1 {
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 62%;
+    margin-left: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .slide-box #paragraph2 {
+    font-size: 2.5rem;
+    align-items: center;
+    margin-top: 16%;
+  }
+
+  /* Estilo para os botões do carrossel */
+  .discover-more {
+    position: absolute;
+    background-color: #18afd3;
+    padding: 15px;
+    border-radius: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3rem;
+  }
+
+  .discover-more:hover {
+    background-color: #1491b0;
+  }
+
+  /* Posicionamento dos botões de cada slide do carrossel */
+  #btn-discover-more1 {
+    left: 0;
+    margin-top: 41%;
+    margin-left: 2.1rem;
+  }
+
+  #btn-discover-more2 {
+    margin-top: 30%;
+  }
+
+  .nav-manual,
+  .nav-auto {
+    position: absolute;
+    width: 100%;
+    top: 1;
+    margin-top: 48%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  ul.tickets li {
+    list-style: none;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  span.price {
+    font-size: 0.8rem;
+  }
+
+  #present-newsletter {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+  }
+}
+
+/* Para desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  /* Novo estilo para o cabeçário */
+  .content-header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  #logotipo {
+    text-align: left;
+  }
+
+  .nav-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-desktop ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+  }
+
+  .nav-desktop ul li a {
+    text-decoration: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .nav-desktop ul li a:hover {
+    background: #1a829c63;
+    cursor: pointer;
+  }
+
+  .subheader {
+    display: none;
+  }
+
+  /* Ajuste na altura de exibição do carrossel*/
+  section.slider {
+    height: 500px;
+  }
+
+  /* Estilo e posicionamento do texto nas imagens */
+  .slide-box #paragraph1 {
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 72%;
+    margin-left: 5rem;
+    font-size: 3rem;
+  }
+
+  .slide-box #paragraph2 {
+    font-size: 3rem;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  /* Estilo para os botões do carrossel */
+  .discover-more {
+    position: absolute;
+    background-color: #18afd3;
+    padding: 15px;
+    border-radius: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3rem;
+  }
+
+  .discover-more:hover {
+    background-color: #1491b0;
+  }
+
+  /* Posicionamento dos botões de cada slide do carrossel */
+  #btn-discover-more1 {
+    left: 0;
+    margin-top: 30%;
+    margin-left: 2.1rem;
+  }
+
+  #btn-discover-more2 {
+    margin-top: 22%;
+  }
+
+  .nav-manual,
+  .nav-auto {
+    position: absolute;
+    width: 100%;
+    top: 1;
+    margin-top: 38%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  /* Espaçamento do conteúdo principal */
+  #content {
+    padding: 50px 90px 50px 90px;
+  }
+
+  #enterprise,
+  #contact {
+    padding: 30px 90px 30px 90px;
+  }
+
+  /* Novo estilo para área de benefícios */
+  #more-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #more-benefits .benefits {
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid transparent;
+  }
+
+  #more-benefits .benefits:nth-child(odd) {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+  }
+
+  #more-benefits .benefits:hover {
+    border-left: 4px solid #18afd3;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 0.15fr;
+  }
+
+  .benefits img {
+    width: 30px;
+  }
+
+  .benefits h2 {
+    grid-column: 2;
+    font-size: 1.2rem;
+  }
+
+  .benefits p {
+    grid-column: 2;
+    font-size: 1.1rem;
+  }
+
+  /* Novo estilo para área de tickets */
+  ul#tickets-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  ul.tickets li {
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  span.price {
+    font-size: 0.9rem;
+  }
+
+  #present-newsletter {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+  }
+}
+
+/* Grandes telas */
+@media screen and (min-width: 1200px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  /* Novo estilo para o cabeçário */
+  .content-header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  #logotipo {
+    text-align: center;
+  }
+
+  .nav-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-desktop ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+  }
+
+  .nav-desktop ul li a {
+    text-decoration: none;
+    background: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .nav-desktop ul li a:hover {
+    background: #1a829c63;
+    cursor: pointer;
+  }
+
+  .subheader {
+    display: none;
+  }
+
+  section.slider {
+    height: 500px;
+  }
+
+  /* Estilo e posicionamento do texto nas imagens */
+  .slide-box #paragraph1 {
+    text-align: left;
+    bottom: 0;
+    margin-bottom: 78%;
+    margin-left: 10rem;
+    font-size: 4rem;
+  }
+
+  .slide-box #paragraph2 {
+    font-size: 4rem;
+    align-items: center;
+    margin-top: 7%;
+  }
+
+  /* Estilo para os botões do carrossel */
+  .discover-more {
+    position: absolute;
+    background-color: #18afd3;
+    padding: 15px;
+    border-radius: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.3rem;
+  }
+
+  .discover-more:hover {
+    background-color: #1491b0;
+  }
+
+  /* Posicionamento dos botões de cada slide do carrossel */
+  #btn-discover-more1 {
+    left: 0;
+    margin-top: 23%;
+    margin-left: 5.1rem;
+  }
+
+  #btn-discover-more2 {
+    margin-top: 21%;
+  }
+
+  .nav-manual,
+  .nav-auto {
+    position: absolute;
+    width: 100%;
+    top: 1;
+    margin-top: 29%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+
+  /* Espaçamento do conteúdo principal */
+  #content {
+    padding: 50px 120px 50px 120px;
+  }
+
+  #enterprise,
+  #contact {
+    padding: 30px 120px 30px 120px;
+  }
+
+  /* Novo estilo para área de benefícios */
+  #more-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  #more-benefits .benefits {
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid transparent;
+  }
+
+  #more-benefits .benefits:nth-child(odd) {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+  }
+
+  #more-benefits .benefits:hover {
+    border-left: 4px solid #18afd3;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 0.15fr;
+  }
+
+  .benefits img {
+    width: 30px;
+  }
+
+  .benefits h2 {
+    grid-column: 2;
+    font-size: 1.2rem;
+  }
+
+  .benefits p {
+    grid-column: 2;
+    font-size: 1.1rem;
+  }
+
+  /* Novo estilo para área de tickets */
+  ul#tickets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  ul.tickets li {
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  span.price {
+    font-size: 0.9rem;
+  }
+
+  #present-newsletter {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+  }
+}

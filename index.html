@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="subheader">
+            <div class="content-subheader">
+                <ul>
+                    <li class="social-medias"><a href="#"><img type="image/svg" src="img/facebook.svg" alt="Facebook"></a></li>
+                    <li class="social-medias"><a href="#"><img type="image/svg" src="img/instagram.svg" alt="Instagram"></a></li>
+                    <li class="social-medias"><a href="#"><img type="image/svg" src="img/vimeo.svg" alt="Vimeo"></a></li>
+                    <li class="social-medias"><a href="#"><img type="image/svg" src="img/youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="real-header">
+            <div class="content-header">
+                <h1 id="logotipo"><span>Ex</span>plore World</h1>
+                <div class="menu-mobile">
+                    <button id="open-menu">
+                        <span>MENU</span>
+                        <span id="icon-open-menu" class="material-symbols-outlined">menu</span>
+                        <span id="icon-close-menu" class="material-symbols-outlined">close</span>
+                    </button>
+
+                    <nav class="menu-nav">
+                        <ul>
+                            <li><a href="#">INÍCIO</a></li>
+                            <li><a href="#">SOBRE</a></li>
+                            <li><a href="#">GALERIA</a></li>
+                            <li><a href="#">SERVIÇO</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+
+                <div class="slide-box primary">
+                    <p id="paragraph1">Explore World <br> <span>International</span></p>
+                    <a id="btn-discover-more1" class="discover-more" href="#">DESCUBRA MAIS</a>
+                    <img class="images" src="img/slide01.svg" alt="Avião sobrevoando uma ilha">
+                </div>
+
+                <div class="slide-box">
+                    <p id="paragraph2">Explore World <br> <span>International</span></p>
+                    <a id="btn-discover-more2" class="discover-more" href="#">DESCUBRA MAIS</a>
+                    <img class="images" src="img/slide02.svg" alt="Avião decolando">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <div id="content">
+            <article>
+                <h1>O que a EW oferece a você:</h1>
+                <div id="more-benefits">
+                    <div class="benefits">
+                        <img src="img/easy.svg" alt="">
+                        <h2>Comodidade e Facilidade</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="benefits">
+                        <img src="img/flexibility.svg" alt="">
+                        <h2>Reserve com flexibilidade</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="img/offers.svg" alt="">
+                        <h2>Ótimas ofertas</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="img/secure.svg" alt="">
+                        <h2>Segurança e Garantia</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="airlane-tickets">
+                <h1>Encontre Passagens Aéreas Incríveis para Seu Destino dos Sonhos</h1>
+                <p>Descubra os melhores preços e oportunidades para viajar com conforto e economia. Sua próxima aventura começa aqui!</p>
+                <ul id="tickets-container">
+                    <li class="info-tickets"><a href="#">Passagem para São Paulo</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Rio de Janeiro</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Salvador</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Brasília</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Recife</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Fortaleza</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Curitiba</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Porto Alegre</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Florianópolis</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Belo Horizonte</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Nova York</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Paris</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Lisboa</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Miami</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Londres</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Roma</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Buenos Aires</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Barcelona</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Santiago</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="info-tickets"><a href="#">Passagem para Tóquio</a>
+                        <div class="arrow-down"></div>
+                        <ul class="tickets">
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet <span class="price">R$ 0,00</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="present-newsletter">
+                <h1>Receba nossa newsletter.</h1>
+                <img src="img/newsletter.svg" alt="">
+                <p>Inscreva-se e receba no seu e-mail dicas personalizadas de viagem e promoções imperdíveis!</p>
+                <div id="email-area">
+                    <input type="email" placeholder="Digite seu endereço de email" autocomplete="off">
+                    <button>Enviar</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div id="enterprise">
+            <h3>Empresa</h3>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Empregos</a></li>
+                <li><a href="#">Como trabalhamos</a></li>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <h3>Contato</h3>
+            <ul>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Parceiros</a></li>
+            </ul>
+        </div>
+
+        <div id="signature">
+            <p>Desenvolvido por Ruan Mateus</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

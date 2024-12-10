@@ -1,0 +1,466 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+
+:root {
+  --arrow: url(../img/arrow-down.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+  display: none;
+}
+/* -=- */
+
+.subheader {
+  display: flex;
+  justify-content: center;
+  background-color: #18afd3;
+  padding: 25px;
+}
+
+.content-subheader ul {
+  display: flex;
+  gap: 25px;
+}
+
+.social-medias {
+  display: block;
+  width: 100%;
+  list-style: none;
+  border: #fff 1px solid;
+  cursor: pointer;
+}
+
+.social-medias:hover {
+  background-color: #fff;
+}
+
+.social-medias:hover a img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(84%) saturate(446%)
+    hue-rotate(144deg) brightness(100%) contrast(96%);
+}
+
+.social-medias a {
+  display: block;
+  width: 100%;
+  padding: 5px 7px;
+}
+
+.social-medias a img {
+  width: 20px;
+  cursor: pointer;
+  color: #18afd3;
+}
+
+.real-header {
+  padding: 30px;
+}
+
+.content-header {
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#logotipo span {
+  color: #18afd3;
+}
+
+#open-menu {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #18afd3;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#icon-open-menu {
+  background: none;
+  border: none;
+}
+
+#icon-close-menu {
+  display: none;
+  background: none;
+  border: none;
+}
+
+#open-menu span {
+  font-size: 18px;
+}
+
+.nav-desktop {
+  /* Menu para desktop desativado por padrão */
+  display: none;
+}
+
+.menu-nav ul {
+  list-style: none;
+}
+
+.menu-nav ul li a {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-nav ul li a:hover {
+  background-color: #1f2a33;
+}
+
+.menu-nav ul li {
+  background-color: #253039;
+}
+
+main img {
+  width: 300px;
+}
+
+/* Estilo do carrossel de imagens */
+section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input {
+  display: none;
+}
+
+.slide-box {
+  display: flex;
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.slide-box img {
+  width: 100%;
+  background-size: cover;
+}
+
+.slide-box p {
+  width: 100%;
+  position: absolute;
+  color: #18afd3;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* Estilo e posicionamento do texto nas imagens */
+.slide-box #paragraph1 {
+  text-align: left;
+  bottom: 0;
+  margin-bottom: 52%;
+  margin-left: 50px;
+}
+
+.slide-box #paragraph2 {
+  align-items: center;
+  margin-top: 16%;
+}
+
+/* Estilo geral para os botões do carrossel */
+.discover-more {
+  position: absolute;
+  background-color: #18afd3;
+  padding: 10px;
+  border-radius: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.8rem;
+}
+
+.discover-more:hover {
+  background-color: #1491b0;
+}
+
+/* Posicionamento dos botões de cada slide do carrossel */
+#btn-discover-more1 {
+  left: 0;
+  margin-top: 51%;
+  margin-left: 1.9rem;
+}
+
+#btn-discover-more2 {
+  margin-top: 36%;
+}
+
+#slide-box .slide-box p span {
+  font-weight: lighter;
+}
+
+.nav-manual,
+.nav-auto {
+  position: absolute;
+  width: 100%;
+  top: 1;
+  margin-top: 92%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid #18afd3;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-manual .manual-btn:hover {
+  background: #18afd3;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2 {
+  background: #18afd3;
+}
+
+#radio1:checked ~ .primary {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primary {
+  margin-left: -25%;
+}
+
+/* Espaçamento do conteúdo */
+#content {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 30px;
+  gap: 40px;
+}
+
+/* Estilo da área de benefícios */
+#more-benefits {
+  margin-top: 1.3rem;
+}
+
+#more-benefits .benefits {
+  padding: 11px;
+  border-radius: 10px;
+}
+
+#more-benefits .benefits:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+
+#more-benefits .benefits:hover {
+  border-left: 5px solid #18afd3;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 0.15fr;
+}
+
+.benefits img {
+  width: 25px;
+  grid-column: 1;
+  margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(94%) saturate(670%)
+    hue-rotate(152deg) brightness(83%) contrast(98%);
+}
+
+.benefits h2 {
+  grid-column: 2;
+  font-size: 1.1rem;
+}
+
+.benefits p {
+  grid-column: 2;
+  font-size: 0.9rem;
+}
+
+/* Estilo da área de apresentação à passagens áreas */
+#airlane-tickets {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+
+#airlane-tickets p {
+  font-size: 0.95rem;
+}
+
+ul#tickets-container {
+  gap: 2px;
+  list-style: none;
+}
+
+li.info-tickets {
+  padding: 10px 0px 10px 0px;
+  border-bottom: 2px solid #d7d9d9;
+}
+
+li.info-tickets div.arrow-down {
+  content: var(--arrow);
+  filter: brightness(0) saturate(100%) invert(60%) sepia(94%) saturate(670%)
+    hue-rotate(152deg) brightness(83%) contrast(98%);
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+li.info-tickets > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+/* Estilo das sub-listas */
+ul.tickets {
+  display: none;
+}
+
+ul.tickets li {
+  list-style: none;
+  font-size: 0.88rem;
+  margin-top: 5px;
+}
+
+ul.tickets li a {
+  display: grid;
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+}
+
+ul.tickets li a:hover {
+  text-decoration: underline;
+}
+
+span.price {
+  grid-column: 2;
+  display: inline-block;
+  font-size: 0.69rem;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+/* Estilo da área de newsletter */
+#present-newsletter {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+
+#present-newsletter p {
+  font-size: 0.95rem;
+}
+
+#present-newsletter img {
+  width: 110px;
+  margin-left: 30px;
+}
+
+div#email-area {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+div#email-area input {
+  padding: 10px;
+}
+
+div#email-area input::placeholder {
+  font-size: 1.2em;
+  font-weight: 450;
+}
+
+div#email-area button {
+  padding: 10px;
+  background: #18afd3;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+div#email-area button:hover {
+  background: #1491b0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+}
+
+div#enterprise {
+  border-top: 3px solid #18afd3;
+}
+
+#contact,
+#enterprise {
+  padding: 30px;
+  border-bottom: 3px solid #18afd3;
+  background: #14c2ed11;
+}
+
+div#signature {
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
